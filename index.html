@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<title>原理图自动生成工具 V21.0（智能布局增强版）</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="app">
+  <div class="header">
+    <div class="row">
+      <div class="title">原理图自动生成工具 V21.0</div>
+      <div class="badge">智能布局增强版</div>
+    </div>
+    <div class="toolbar">
+      <button class="btn ghost sm" id="btn-import-netlist">导入网表</button>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="canvas-wrap">
+      <div class="canvas-toolbar">
+        <div class="stats">
+          <span>器件：<b id="inst-count">0</b></span>
+          <span>连线：<b id="wire-count">0</b></span>
+          <span>标签：<b id="label-count">0</b></span>
+          <span>成功率：<b id="success-rate">--</b></span>
+        </div>
+        <div class="row">
+          <div class="tips">
+            💡：滚轮放大缩小，右键移动画布，左键选中元件
+          </div>
+          <button class="btn ghost sm" id="btn-fit">还原</button>
+        </div>
+      </div>
+      <div class="svgbox">
+        <svg id="schematic" class="schematic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1600">
+          <defs>
+            <pattern id="grid10" width="10" height="10" patternUnits="userSpaceOnUse">
+              <path d="M10 0L0 0 0 10" class="grid"></path>
+            </pattern>
+          </defs>
+        <rect id="bg-rect" x="0" y="0" width="100%" height="100%" fill="#ffffff"></rect>
+        <g id="g-grid" style="display:none">
+          <rect x="0" y="0" width="100%" height="100%" fill="url(#grid10)"></rect>
+        </g>
+        <g id="g-scene">
+          <g id="g-wires"></g>
+          <g id="g-symbols"></g>
+          <g id="g-junctions"></g>
+          <g id="g-power-symbols"></g>
+          <g id="g-nettags"></g>
+        </g>
+        </svg>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="card">
+        <h3>网表与库状态</h3>
+        <div class="kv">
+            <div class="small">已载入库符号</div>
+            <div><b id="lib-count">0</b> 个</div>
+            <div class="small">网表组件</div>
+            <div><b id="cmp-count">0</b> 个</div>
+            <div class="small">网表网络</div>
+            <div><b id="net-count">0</b> 条</div>
+        </div>
+        <div class="list mono small" id="list-comps" aria-label="components list"></div>
+        <div class="list mono small" id="list-nets" aria-label="nets list"></div>
+
+        <div class="row">
+          <button class="btn success" id="btn-place-route">自动布局 + 布线</button>
+          <button class="btn ghost" id="btn-clear">清空画布</button>
+          <label class="small"><input type="checkbox" id="ck-grid" /> 显示网格</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast-area" id="toasts"></div>
+
+<script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
