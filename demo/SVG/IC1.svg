@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="canvas" viewBox="810 430 120 90" width="120" height="90"><metadata id="eda-meta">{
+  "format": "EDA-SmartSymbol-1.0",
+  "component": {
+    "lib_reference": "OP07",
+    "designator": "IC1",
+    "unique_id": "8PIYMR2001112864229361940@9#%4B",
+    "display_mode": 0,
+    "anchor_schema": "pin",
+    "pins": [
+      {
+        "order_index": 1,
+        "number": "2",
+        "number_original": "2",
+        "name": "-IN",
+        "electrical_type": "unspecified",
+        "x": 830,
+        "y": 490,
+        "orientation": 34
+      },
+      {
+        "order_index": 2,
+        "number": "3",
+        "number_original": "3",
+        "name": "+IN",
+        "electrical_type": "unspecified",
+        "x": 830,
+        "y": 470,
+        "orientation": 34
+      },
+      {
+        "order_index": 3,
+        "number": "7",
+        "number_original": "7",
+        "name": "",
+        "electrical_type": "open_emitter",
+        "x": 860,
+        "y": 470,
+        "orientation": 43
+      },
+      {
+        "order_index": 4,
+        "number": "4",
+        "number_original": "4",
+        "name": "-",
+        "electrical_type": "open_emitter",
+        "x": 880,
+        "y": 490,
+        "orientation": 33
+      },
+      {
+        "order_index": 5,
+        "number": "6",
+        "number_original": "6",
+        "name": "OUT",
+        "electrical_type": "io",
+        "x": 910,
+        "y": 480,
+        "orientation": 32
+      }
+    ]
+  }
+}</metadata><g id="graphics"><line x1="857" y1="467" x2="857" y2="473" stroke="#8B0000" stroke-width="1.5"/><line x1="854" y1="490" x2="860" y2="490" stroke="#8B0000" stroke-width="1.5"/><line x1="854" y1="470" x2="860" y2="470" stroke="#8B0000" stroke-width="1.5"/><polyline points="850,460 890,480 850,500 850,460" fill="none" stroke="#8B0000" stroke-width="1.5"/></g><g id="pins"><line x1="850" y1="490" x2="830" y2="490" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="855" y="490" fill="#000080" font-size="8" font-family="monospace">-IN</text><text dominant-baseline="middle" text-anchor="start" x="826" y="490" fill="#000080" font-size="8" font-family="monospace">2</text><line x1="850" y1="470" x2="830" y2="470" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="855" y="470" fill="#000080" font-size="8" font-family="monospace">+IN</text><text dominant-baseline="middle" text-anchor="start" x="826" y="470" fill="#000080" font-size="8" font-family="monospace">3</text><line x1="870" y1="470" x2="860" y2="470" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="875" y="470" fill="#000080" font-size="8" font-family="monospace"/><text dominant-baseline="middle" text-anchor="start" x="856" y="470" fill="#000080" font-size="8" font-family="monospace">7</text><line x1="870" y1="490" x2="880" y2="490" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="end" x="865" y="490" fill="#000080" font-size="8" font-family="monospace">-</text><text dominant-baseline="middle" text-anchor="end" x="884" y="490" fill="#000080" font-size="8" font-family="monospace">4</text><line x1="890" y1="480" x2="910" y2="480" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="end" x="885" y="480" fill="#000080" font-size="8" font-family="monospace">OUT</text><text dominant-baseline="middle" text-anchor="end" x="914" y="480" fill="#000080" font-size="8" font-family="monospace">6</text></g><g id="anchors"><g class="connection-point" role="connection-point" data-order-index="1" data-pin-number="2" data-number-original="2" data-pin-name="-IN" data-elec-type="unspecified" data-orientation="34" data-x="830" data-y="490"><circle cx="830" cy="490"/><title>#1 → Pin 2: -IN [unspecified]</title></g><g class="connection-point" role="connection-point" data-order-index="2" data-pin-number="3" data-number-original="3" data-pin-name="+IN" data-elec-type="unspecified" data-orientation="34" data-x="830" data-y="470"><circle cx="830" cy="470"/><title>#2 → Pin 3: +IN [unspecified]</title></g><g class="connection-point" role="connection-point" data-order-index="3" data-pin-number="7" data-number-original="7" data-pin-name="" data-elec-type="open_emitter" data-orientation="43" data-x="860" data-y="470"><circle cx="860" cy="470"/><title>#3 → Pin 7:  [open_emitter]</title></g><g class="connection-point" role="connection-point" data-order-index="4" data-pin-number="4" data-number-original="4" data-pin-name="-" data-elec-type="open_emitter" data-orientation="33" data-x="880" data-y="490"><circle cx="880" cy="490"/><title>#4 → Pin 4: - [open_emitter]</title></g><g class="connection-point" role="connection-point" data-order-index="5" data-pin-number="6" data-number-original="6" data-pin-name="OUT" data-elec-type="io" data-orientation="32" data-x="910" data-y="480"><circle cx="910" cy="480"/><title>#5 → Pin 6: OUT [io]</title></g></g><g id="labels"><text x="890" y="500" fill="#000080" font-size="9" font-family="monospace" text-anchor="middle" dominant-baseline="central" font-weight="bold">IC1</text><text x="890" y="450" fill="#666" font-size="7" font-family="monospace" text-anchor="middle" dominant-baseline="central">OP07</text></g></svg>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="canvas" viewBox="730 320 80 80" width="80" height="80"><metadata id="eda-meta">{
+  "format": "EDA-SmartSymbol-1.0",
+  "component": {
+    "lib_reference": "CON2",
+    "designator": "J2",
+    "unique_id": "BYPNALVX",
+    "display_mode": 0,
+    "anchor_schema": "pin",
+    "pins": [
+      {
+        "order_index": 1,
+        "number": "1",
+        "number_original": "1",
+        "name": "1",
+        "electrical_type": "passive",
+        "x": 750,
+        "y": 370,
+        "orientation": 42
+      },
+      {
+        "order_index": 2,
+        "number": "2",
+        "number_original": "2",
+        "name": "2",
+        "electrical_type": "passive",
+        "x": 750,
+        "y": 360,
+        "orientation": 42
+      }
+    ]
+  }
+}</metadata><g id="graphics"><rect x="770" y="350" width="20" height="30" fill="#FEFBCB" stroke="#8B0000" stroke-width="1.5"/></g><g id="pins"><line x1="770" y1="370" x2="750" y2="370" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="746" y="370" fill="#000080" font-size="8" font-family="monospace">1</text><line x1="770" y1="360" x2="750" y2="360" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="746" y="360" fill="#000080" font-size="8" font-family="monospace">2</text></g><g id="anchors"><g class="connection-point" role="connection-point" data-order-index="1" data-pin-number="1" data-number-original="1" data-pin-name="1" data-elec-type="passive" data-orientation="42" data-x="750" data-y="370"><circle cx="750" cy="370"/><title>#1 → Pin 1: 1 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="2" data-pin-number="2" data-number-original="2" data-pin-name="2" data-elec-type="passive" data-orientation="42" data-x="750" data-y="360"><circle cx="750" cy="360"/><title>#2 → Pin 2: 2 [passive]</title></g></g><g id="labels"><text x="770" y="380" fill="#000080" font-size="9" font-family="monospace" text-anchor="middle" dominant-baseline="central" font-weight="bold">J2</text><text x="770" y="340" fill="#666" font-size="7" font-family="monospace" text-anchor="middle" dominant-baseline="central">CON2</text></g></svg>

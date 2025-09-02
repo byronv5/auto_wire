@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="canvas" viewBox="350 710 80 60" width="80" height="60"><metadata id="eda-meta">{
+  "format": "EDA-SmartSymbol-1.0",
+  "component": {
+    "lib_reference": "12M",
+    "designator": "Y1",
+    "unique_id": "4%KS8M2001112864229361950W@LPIF",
+    "display_mode": 0,
+    "anchor_schema": "pin",
+    "pins": [
+      {
+        "order_index": 1,
+        "number": "1",
+        "number_original": "1",
+        "name": "1",
+        "electrical_type": "passive",
+        "x": 370,
+        "y": 730,
+        "orientation": 35
+      },
+      {
+        "order_index": 2,
+        "number": "2",
+        "number_original": "2",
+        "name": "2",
+        "electrical_type": "passive",
+        "x": 410,
+        "y": 750,
+        "orientation": 33
+      }
+    ]
+  }
+}</metadata><g id="graphics"><line x1="384" y1="748" x2="396" y2="748" stroke="#8B0000" stroke-width="1.5"/><line x1="381" y1="744" x2="399" y2="744" stroke="#8B0000" stroke-width="1.5"/><line x1="381" y1="736" x2="399" y2="736" stroke="#8B0000" stroke-width="1.5"/><line x1="384" y1="732" x2="396" y2="732" stroke="#8B0000" stroke-width="1.5"/><line x1="399" y1="736" x2="399" y2="744" stroke="#8B0000" stroke-width="1.5"/><line x1="390" y1="748" x2="390" y2="750" stroke="#8B0000" stroke-width="1.5"/><line x1="390" y1="730" x2="390" y2="732" stroke="#8B0000" stroke-width="1.5"/><line x1="381" y1="736" x2="381" y2="744" stroke="#8B0000" stroke-width="1.5"/></g><g id="pins"><line x1="390" y1="730" x2="370" y2="730" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="366" y="730" fill="#000080" font-size="8" font-family="monospace">1</text><line x1="390" y1="750" x2="410" y2="750" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="end" x="414" y="750" fill="#000080" font-size="8" font-family="monospace">2</text></g><g id="anchors"><g class="connection-point" role="connection-point" data-order-index="1" data-pin-number="1" data-number-original="1" data-pin-name="1" data-elec-type="passive" data-orientation="35" data-x="370" data-y="730"><circle cx="370" cy="730"/><title>#1 → Pin 1: 1 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="2" data-pin-number="2" data-number-original="2" data-pin-name="2" data-elec-type="passive" data-orientation="33" data-x="410" data-y="750"><circle cx="410" cy="750"/><title>#2 → Pin 2: 2 [passive]</title></g></g><g id="labels"><text x="400" y="741" fill="#000080" font-size="9" font-family="monospace" text-anchor="middle" dominant-baseline="central" font-weight="bold">Y1</text><text x="400" y="731" fill="#666" font-size="7" font-family="monospace" text-anchor="middle" dominant-baseline="central">12M</text></g></svg>

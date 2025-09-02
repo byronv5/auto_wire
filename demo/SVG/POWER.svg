@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="canvas" viewBox="730 580 80 90" width="80" height="90"><metadata id="eda-meta">{
+  "format": "EDA-SmartSymbol-1.0",
+  "component": {
+    "lib_reference": "CON3",
+    "designator": "POWER",
+    "unique_id": "KMHFW52001112864229361950VMNEIE",
+    "display_mode": 0,
+    "anchor_schema": "pin",
+    "pins": [
+      {
+        "order_index": 1,
+        "number": "1",
+        "number_original": "1",
+        "name": "1",
+        "electrical_type": "passive",
+        "x": 790,
+        "y": 620,
+        "orientation": 40
+      },
+      {
+        "order_index": 2,
+        "number": "2",
+        "number_original": "2",
+        "name": "2",
+        "electrical_type": "passive",
+        "x": 790,
+        "y": 630,
+        "orientation": 40
+      },
+      {
+        "order_index": 3,
+        "number": "3",
+        "number_original": "3",
+        "name": "3",
+        "electrical_type": "passive",
+        "x": 790,
+        "y": 640,
+        "orientation": 40
+      }
+    ]
+  }
+}</metadata><g id="graphics"><rect x="750" y="610" width="20" height="40" fill="#FEFBCB" stroke="#8B0000" stroke-width="1.5"/></g><g id="pins"><line x1="770" y1="620" x2="790" y2="620" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="end" x="794" y="620" fill="#000080" font-size="8" font-family="monospace">1</text><line x1="770" y1="630" x2="790" y2="630" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="end" x="794" y="630" fill="#000080" font-size="8" font-family="monospace">2</text><line x1="770" y1="640" x2="790" y2="640" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="end" x="794" y="640" fill="#000080" font-size="8" font-family="monospace">3</text></g><g id="anchors"><g class="connection-point" role="connection-point" data-order-index="1" data-pin-number="1" data-number-original="1" data-pin-name="1" data-elec-type="passive" data-orientation="40" data-x="790" data-y="620"><circle cx="790" cy="620"/><title>#1 → Pin 1: 1 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="2" data-pin-number="2" data-number-original="2" data-pin-name="2" data-elec-type="passive" data-orientation="40" data-x="790" data-y="630"><circle cx="790" cy="630"/><title>#2 → Pin 2: 2 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="3" data-pin-number="3" data-number-original="3" data-pin-name="3" data-elec-type="passive" data-orientation="40" data-x="790" data-y="640"><circle cx="790" cy="640"/><title>#3 → Pin 3: 3 [passive]</title></g></g><g id="labels"><text x="750" y="650" fill="#000080" font-size="9" font-family="monospace" text-anchor="middle" dominant-baseline="central" font-weight="bold">POWER</text><text x="750" y="600" fill="#666" font-size="7" font-family="monospace" text-anchor="middle" dominant-baseline="central">CON3</text></g></svg>

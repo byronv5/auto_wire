@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="canvas" viewBox="630 510 90 160" width="90" height="160"><metadata id="eda-meta">{
+  "format": "EDA-SmartSymbol-1.0",
+  "component": {
+    "lib_reference": "PROGRAM",
+    "designator": "J1",
+    "unique_id": "C2U6V22001112864229361950NOF#CT",
+    "display_mode": 0,
+    "anchor_schema": "pin",
+    "pins": [
+      {
+        "order_index": 1,
+        "number": "1",
+        "number_original": "1",
+        "name": "1",
+        "electrical_type": "passive",
+        "x": 650,
+        "y": 550,
+        "orientation": 42
+      },
+      {
+        "order_index": 2,
+        "number": "2",
+        "number_original": "2",
+        "name": "2",
+        "electrical_type": "passive",
+        "x": 650,
+        "y": 560,
+        "orientation": 42
+      },
+      {
+        "order_index": 3,
+        "number": "3",
+        "number_original": "3",
+        "name": "3",
+        "electrical_type": "passive",
+        "x": 650,
+        "y": 570,
+        "orientation": 42
+      },
+      {
+        "order_index": 4,
+        "number": "4",
+        "number_original": "4",
+        "name": "4",
+        "electrical_type": "passive",
+        "x": 650,
+        "y": 580,
+        "orientation": 42
+      },
+      {
+        "order_index": 5,
+        "number": "5",
+        "number_original": "5",
+        "name": "5",
+        "electrical_type": "passive",
+        "x": 650,
+        "y": 590,
+        "orientation": 42
+      },
+      {
+        "order_index": 6,
+        "number": "6",
+        "number_original": "6",
+        "name": "6",
+        "electrical_type": "passive",
+        "x": 650,
+        "y": 600,
+        "orientation": 42
+      },
+      {
+        "order_index": 7,
+        "number": "7",
+        "number_original": "7",
+        "name": "7",
+        "electrical_type": "passive",
+        "x": 650,
+        "y": 610,
+        "orientation": 42
+      },
+      {
+        "order_index": 8,
+        "number": "8",
+        "number_original": "8",
+        "name": "8",
+        "electrical_type": "passive",
+        "x": 650,
+        "y": 620,
+        "orientation": 42
+      },
+      {
+        "order_index": 9,
+        "number": "9",
+        "number_original": "9",
+        "name": "9",
+        "electrical_type": "passive",
+        "x": 650,
+        "y": 630,
+        "orientation": 42
+      },
+      {
+        "order_index": 10,
+        "number": "10",
+        "number_original": "10",
+        "name": "10",
+        "electrical_type": "passive",
+        "x": 650,
+        "y": 640,
+        "orientation": 42
+      }
+    ]
+  }
+}</metadata><g id="graphics"><rect x="670" y="540" width="30" height="110" fill="#FEFBCB" stroke="#8B0000" stroke-width="1.5"/></g><g id="pins"><line x1="670" y1="550" x2="650" y2="550" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="675" y="550" fill="#000080" font-size="8" font-family="monospace">1</text><text dominant-baseline="middle" text-anchor="start" x="646" y="550" fill="#000080" font-size="8" font-family="monospace">1</text><line x1="670" y1="560" x2="650" y2="560" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="675" y="560" fill="#000080" font-size="8" font-family="monospace">2</text><text dominant-baseline="middle" text-anchor="start" x="646" y="560" fill="#000080" font-size="8" font-family="monospace">2</text><line x1="670" y1="570" x2="650" y2="570" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="675" y="570" fill="#000080" font-size="8" font-family="monospace">3</text><text dominant-baseline="middle" text-anchor="start" x="646" y="570" fill="#000080" font-size="8" font-family="monospace">3</text><line x1="670" y1="580" x2="650" y2="580" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="675" y="580" fill="#000080" font-size="8" font-family="monospace">4</text><text dominant-baseline="middle" text-anchor="start" x="646" y="580" fill="#000080" font-size="8" font-family="monospace">4</text><line x1="670" y1="590" x2="650" y2="590" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="675" y="590" fill="#000080" font-size="8" font-family="monospace">5</text><text dominant-baseline="middle" text-anchor="start" x="646" y="590" fill="#000080" font-size="8" font-family="monospace">5</text><line x1="670" y1="600" x2="650" y2="600" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="675" y="600" fill="#000080" font-size="8" font-family="monospace">6</text><text dominant-baseline="middle" text-anchor="start" x="646" y="600" fill="#000080" font-size="8" font-family="monospace">6</text><line x1="670" y1="610" x2="650" y2="610" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="675" y="610" fill="#000080" font-size="8" font-family="monospace">7</text><text dominant-baseline="middle" text-anchor="start" x="646" y="610" fill="#000080" font-size="8" font-family="monospace">7</text><line x1="670" y1="620" x2="650" y2="620" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="675" y="620" fill="#000080" font-size="8" font-family="monospace">8</text><text dominant-baseline="middle" text-anchor="start" x="646" y="620" fill="#000080" font-size="8" font-family="monospace">8</text><line x1="670" y1="630" x2="650" y2="630" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="675" y="630" fill="#000080" font-size="8" font-family="monospace">9</text><text dominant-baseline="middle" text-anchor="start" x="646" y="630" fill="#000080" font-size="8" font-family="monospace">9</text><line x1="670" y1="640" x2="650" y2="640" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="675" y="640" fill="#000080" font-size="8" font-family="monospace">10</text><text dominant-baseline="middle" text-anchor="start" x="646" y="640" fill="#000080" font-size="8" font-family="monospace">10</text></g><g id="anchors"><g class="connection-point" role="connection-point" data-order-index="1" data-pin-number="1" data-number-original="1" data-pin-name="1" data-elec-type="passive" data-orientation="42" data-x="650" data-y="550"><circle cx="650" cy="550"/><title>#1 → Pin 1: 1 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="2" data-pin-number="2" data-number-original="2" data-pin-name="2" data-elec-type="passive" data-orientation="42" data-x="650" data-y="560"><circle cx="650" cy="560"/><title>#2 → Pin 2: 2 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="3" data-pin-number="3" data-number-original="3" data-pin-name="3" data-elec-type="passive" data-orientation="42" data-x="650" data-y="570"><circle cx="650" cy="570"/><title>#3 → Pin 3: 3 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="4" data-pin-number="4" data-number-original="4" data-pin-name="4" data-elec-type="passive" data-orientation="42" data-x="650" data-y="580"><circle cx="650" cy="580"/><title>#4 → Pin 4: 4 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="5" data-pin-number="5" data-number-original="5" data-pin-name="5" data-elec-type="passive" data-orientation="42" data-x="650" data-y="590"><circle cx="650" cy="590"/><title>#5 → Pin 5: 5 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="6" data-pin-number="6" data-number-original="6" data-pin-name="6" data-elec-type="passive" data-orientation="42" data-x="650" data-y="600"><circle cx="650" cy="600"/><title>#6 → Pin 6: 6 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="7" data-pin-number="7" data-number-original="7" data-pin-name="7" data-elec-type="passive" data-orientation="42" data-x="650" data-y="610"><circle cx="650" cy="610"/><title>#7 → Pin 7: 7 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="8" data-pin-number="8" data-number-original="8" data-pin-name="8" data-elec-type="passive" data-orientation="42" data-x="650" data-y="620"><circle cx="650" cy="620"/><title>#8 → Pin 8: 8 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="9" data-pin-number="9" data-number-original="9" data-pin-name="9" data-elec-type="passive" data-orientation="42" data-x="650" data-y="630"><circle cx="650" cy="630"/><title>#9 → Pin 9: 9 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="10" data-pin-number="10" data-number-original="10" data-pin-name="10" data-elec-type="passive" data-orientation="42" data-x="650" data-y="640"><circle cx="650" cy="640"/><title>#10 → Pin 10: 10 [passive]</title></g></g><g id="labels"><text x="670" y="650" fill="#000080" font-size="9" font-family="monospace" text-anchor="middle" dominant-baseline="central" font-weight="bold">J1</text><text x="670" y="530" fill="#666" font-size="7" font-family="monospace" text-anchor="middle" dominant-baseline="central">PROGRAM</text></g></svg>

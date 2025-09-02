@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="canvas" viewBox="890 440 70 70" width="70" height="70"><metadata id="eda-meta">{
+  "format": "EDA-SmartSymbol-1.0",
+  "component": {
+    "lib_reference": "10uF",
+    "designator": "C7",
+    "unique_id": "AUWDCVCM",
+    "display_mode": 0,
+    "anchor_schema": "pin",
+    "pins": [
+      {
+        "order_index": 1,
+        "number": "1",
+        "number_original": "1",
+        "name": "1",
+        "electrical_type": "passive",
+        "x": 940,
+        "y": 480,
+        "orientation": 32
+      },
+      {
+        "order_index": 2,
+        "number": "2",
+        "number_original": "2",
+        "name": "2",
+        "electrical_type": "passive",
+        "x": 910,
+        "y": 480,
+        "orientation": 34
+      }
+    ]
+  }
+}</metadata><g id="graphics"><line x1="923" y1="480" x2="920" y2="480" stroke="#8B0000" stroke-width="1.5"/><line x1="930" y1="480" x2="927" y2="480" stroke="#8B0000" stroke-width="1.5"/><line x1="923" y1="489" x2="923" y2="471" stroke="#8B0000" stroke-width="1.5"/><line x1="927" y1="489" x2="927" y2="471" stroke="#8B0000" stroke-width="1.5"/></g><g id="pins"><line x1="930" y1="480" x2="940" y2="480" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="end" x="944" y="480" fill="#000080" font-size="8" font-family="monospace">1</text><line x1="920" y1="480" x2="910" y2="480" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="906" y="480" fill="#000080" font-size="8" font-family="monospace">2</text></g><g id="anchors"><g class="connection-point" role="connection-point" data-order-index="1" data-pin-number="1" data-number-original="1" data-pin-name="1" data-elec-type="passive" data-orientation="32" data-x="940" data-y="480"><circle cx="940" cy="480"/><title>#1 → Pin 1: 1 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="2" data-pin-number="2" data-number-original="2" data-pin-name="2" data-elec-type="passive" data-orientation="34" data-x="910" data-y="480"><circle cx="910" cy="480"/><title>#2 → Pin 2: 2 [passive]</title></g></g><g id="labels"><text x="919" y="490" fill="#000080" font-size="9" font-family="monospace" text-anchor="middle" dominant-baseline="central" font-weight="bold">C7</text><text x="919" y="460" fill="#666" font-size="7" font-family="monospace" text-anchor="middle" dominant-baseline="central">10uF</text></g></svg>

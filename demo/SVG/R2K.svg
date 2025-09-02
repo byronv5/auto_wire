@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="canvas" viewBox="620 661 100 128" width="100" height="128"><metadata id="eda-meta">{
+  "format": "EDA-SmartSymbol-1.0",
+  "component": {
+    "lib_reference": "15K*8",
+    "designator": "R2K",
+    "unique_id": "$OD$4420011128642293619505PHFVU",
+    "display_mode": 0,
+    "anchor_schema": "pin",
+    "pins": [
+      {
+        "order_index": 1,
+        "number": "1",
+        "number_original": "1",
+        "name": "1",
+        "electrical_type": "passive",
+        "x": 700,
+        "y": 720,
+        "orientation": 32
+      },
+      {
+        "order_index": 2,
+        "number": "2",
+        "number_original": "2",
+        "name": "2",
+        "electrical_type": "passive",
+        "x": 640,
+        "y": 760,
+        "orientation": 34
+      },
+      {
+        "order_index": 3,
+        "number": "3",
+        "number_original": "3",
+        "name": "3",
+        "electrical_type": "passive",
+        "x": 640,
+        "y": 750,
+        "orientation": 34
+      },
+      {
+        "order_index": 4,
+        "number": "4",
+        "number_original": "4",
+        "name": "4",
+        "electrical_type": "passive",
+        "x": 640,
+        "y": 740,
+        "orientation": 34
+      },
+      {
+        "order_index": 5,
+        "number": "5",
+        "number_original": "5",
+        "name": "5",
+        "electrical_type": "passive",
+        "x": 640,
+        "y": 730,
+        "orientation": 34
+      },
+      {
+        "order_index": 6,
+        "number": "6",
+        "number_original": "6",
+        "name": "6",
+        "electrical_type": "passive",
+        "x": 640,
+        "y": 720,
+        "orientation": 34
+      },
+      {
+        "order_index": 7,
+        "number": "7",
+        "number_original": "7",
+        "name": "7",
+        "electrical_type": "passive",
+        "x": 640,
+        "y": 710,
+        "orientation": 34
+      },
+      {
+        "order_index": 8,
+        "number": "8",
+        "number_original": "8",
+        "name": "8",
+        "electrical_type": "passive",
+        "x": 640,
+        "y": 700,
+        "orientation": 34
+      },
+      {
+        "order_index": 9,
+        "number": "9",
+        "number_original": "9",
+        "name": "9",
+        "electrical_type": "passive",
+        "x": 640,
+        "y": 690,
+        "orientation": 34
+      }
+    ]
+  }
+}</metadata><g id="graphics"><line x1="680" y1="693" x2="680" y2="687" stroke="#8B0000" stroke-width="1.5"/><line x1="650" y1="693" x2="650" y2="687" stroke="#8B0000" stroke-width="1.5"/><line x1="650" y1="687" x2="680" y2="687" stroke="#8B0000" stroke-width="1.5"/><line x1="650" y1="693" x2="680" y2="693" stroke="#8B0000" stroke-width="1.5"/><line x1="680" y1="703" x2="680" y2="697" stroke="#8B0000" stroke-width="1.5"/><line x1="650" y1="703" x2="650" y2="697" stroke="#8B0000" stroke-width="1.5"/><line x1="650" y1="697" x2="680" y2="697" stroke="#8B0000" stroke-width="1.5"/><line x1="650" y1="703" x2="680" y2="703" stroke="#8B0000" stroke-width="1.5"/><line x1="680" y1="713" x2="680" y2="707" stroke="#8B0000" stroke-width="1.5"/><line x1="650" y1="713" x2="650" y2="707" stroke="#8B0000" stroke-width="1.5"/><line x1="650" y1="707" x2="680" y2="707" stroke="#8B0000" stroke-width="1.5"/><line x1="650" y1="713" x2="680" y2="713" stroke="#8B0000" stroke-width="1.5"/><line x1="680" y1="723" x2="680" y2="717" stroke="#8B0000" stroke-width="1.5"/><line x1="650" y1="723" x2="650" y2="717" stroke="#8B0000" stroke-width="1.5"/><line x1="650" y1="717" x2="680" y2="717" stroke="#8B0000" stroke-width="1.5"/><line x1="650" y1="723" x2="680" y2="723" stroke="#8B0000" stroke-width="1.5"/><line x1="680" y1="733" x2="680" y2="727" stroke="#8B0000" stroke-width="1.5"/><line x1="650" y1="733" x2="650" y2="727" stroke="#8B0000" stroke-width="1.5"/><line x1="650" y1="727" x2="680" y2="727" stroke="#8B0000" stroke-width="1.5"/><line x1="650" y1="733" x2="680" y2="733" stroke="#8B0000" stroke-width="1.5"/><line x1="680" y1="743" x2="680" y2="737" stroke="#8B0000" stroke-width="1.5"/><line x1="650" y1="743" x2="650" y2="737" stroke="#8B0000" stroke-width="1.5"/><line x1="650" y1="737" x2="680" y2="737" stroke="#8B0000" stroke-width="1.5"/><line x1="650" y1="743" x2="680" y2="743" stroke="#8B0000" stroke-width="1.5"/><line x1="680" y1="753" x2="680" y2="747" stroke="#8B0000" stroke-width="1.5"/><line x1="650" y1="753" x2="650" y2="747" stroke="#8B0000" stroke-width="1.5"/><line x1="650" y1="747" x2="680" y2="747" stroke="#8B0000" stroke-width="1.5"/><line x1="650" y1="753" x2="680" y2="753" stroke="#8B0000" stroke-width="1.5"/><line x1="680" y1="763" x2="680" y2="757" stroke="#8B0000" stroke-width="1.5"/><line x1="650" y1="763" x2="650" y2="757" stroke="#8B0000" stroke-width="1.5"/><line x1="650" y1="757" x2="680" y2="757" stroke="#8B0000" stroke-width="1.5"/><line x1="650" y1="763" x2="680" y2="763" stroke="#8B0000" stroke-width="1.5"/><polyline points="680,690 690,690" fill="none" stroke="#8B0000" stroke-width="1.5"/><polyline points="680,700 690,700" fill="none" stroke="#8B0000" stroke-width="1.5"/><polyline points="680,710 690,710" fill="none" stroke="#8B0000" stroke-width="1.5"/><polyline points="680,720 690,720" fill="none" stroke="#8B0000" stroke-width="1.5"/><polyline points="680,730 690,730" fill="none" stroke="#8B0000" stroke-width="1.5"/><polyline points="680,740 690,740" fill="none" stroke="#8B0000" stroke-width="1.5"/><polyline points="680,750 690,750" fill="none" stroke="#8B0000" stroke-width="1.5"/><polyline points="680,760 690,760 690,690" fill="none" stroke="#8B0000" stroke-width="1.5"/></g><g id="pins"><line x1="690" y1="720" x2="700" y2="720" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="end" x="685" y="720" fill="#000080" font-size="8" font-family="monospace">1</text><text dominant-baseline="middle" text-anchor="end" x="704" y="720" fill="#000080" font-size="8" font-family="monospace">1</text><line x1="650" y1="760" x2="640" y2="760" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="655" y="760" fill="#000080" font-size="8" font-family="monospace">2</text><text dominant-baseline="middle" text-anchor="start" x="636" y="760" fill="#000080" font-size="8" font-family="monospace">2</text><line x1="650" y1="750" x2="640" y2="750" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="655" y="750" fill="#000080" font-size="8" font-family="monospace">3</text><text dominant-baseline="middle" text-anchor="start" x="636" y="750" fill="#000080" font-size="8" font-family="monospace">3</text><line x1="650" y1="740" x2="640" y2="740" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="655" y="740" fill="#000080" font-size="8" font-family="monospace">4</text><text dominant-baseline="middle" text-anchor="start" x="636" y="740" fill="#000080" font-size="8" font-family="monospace">4</text><line x1="650" y1="730" x2="640" y2="730" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="655" y="730" fill="#000080" font-size="8" font-family="monospace">5</text><text dominant-baseline="middle" text-anchor="start" x="636" y="730" fill="#000080" font-size="8" font-family="monospace">5</text><line x1="650" y1="720" x2="640" y2="720" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="655" y="720" fill="#000080" font-size="8" font-family="monospace">6</text><text dominant-baseline="middle" text-anchor="start" x="636" y="720" fill="#000080" font-size="8" font-family="monospace">6</text><line x1="650" y1="710" x2="640" y2="710" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="655" y="710" fill="#000080" font-size="8" font-family="monospace">7</text><text dominant-baseline="middle" text-anchor="start" x="636" y="710" fill="#000080" font-size="8" font-family="monospace">7</text><line x1="650" y1="700" x2="640" y2="700" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="655" y="700" fill="#000080" font-size="8" font-family="monospace">8</text><text dominant-baseline="middle" text-anchor="start" x="636" y="700" fill="#000080" font-size="8" font-family="monospace">8</text><line x1="650" y1="690" x2="640" y2="690" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="655" y="690" fill="#000080" font-size="8" font-family="monospace">9</text><text dominant-baseline="middle" text-anchor="start" x="636" y="690" fill="#000080" font-size="8" font-family="monospace">9</text></g><g id="anchors"><g class="connection-point" role="connection-point" data-order-index="1" data-pin-number="1" data-number-original="1" data-pin-name="1" data-elec-type="passive" data-orientation="32" data-x="700" data-y="720"><circle cx="700" cy="720"/><title>#1 → Pin 1: 1 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="2" data-pin-number="2" data-number-original="2" data-pin-name="2" data-elec-type="passive" data-orientation="34" data-x="640" data-y="760"><circle cx="640" cy="760"/><title>#2 → Pin 2: 2 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="3" data-pin-number="3" data-number-original="3" data-pin-name="3" data-elec-type="passive" data-orientation="34" data-x="640" data-y="750"><circle cx="640" cy="750"/><title>#3 → Pin 3: 3 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="4" data-pin-number="4" data-number-original="4" data-pin-name="4" data-elec-type="passive" data-orientation="34" data-x="640" data-y="740"><circle cx="640" cy="740"/><title>#4 → Pin 4: 4 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="5" data-pin-number="5" data-number-original="5" data-pin-name="5" data-elec-type="passive" data-orientation="34" data-x="640" data-y="730"><circle cx="640" cy="730"/><title>#5 → Pin 5: 5 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="6" data-pin-number="6" data-number-original="6" data-pin-name="6" data-elec-type="passive" data-orientation="34" data-x="640" data-y="720"><circle cx="640" cy="720"/><title>#6 → Pin 6: 6 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="7" data-pin-number="7" data-number-original="7" data-pin-name="7" data-elec-type="passive" data-orientation="34" data-x="640" data-y="710"><circle cx="640" cy="710"/><title>#7 → Pin 7: 7 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="8" data-pin-number="8" data-number-original="8" data-pin-name="8" data-elec-type="passive" data-orientation="34" data-x="640" data-y="700"><circle cx="640" cy="700"/><title>#8 → Pin 8: 8 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="9" data-pin-number="9" data-number-original="9" data-pin-name="9" data-elec-type="passive" data-orientation="34" data-x="640" data-y="690"><circle cx="640" cy="690"/><title>#9 → Pin 9: 9 [passive]</title></g></g><g id="labels"><text x="649" y="769" fill="#000080" font-size="9" font-family="monospace" text-anchor="middle" dominant-baseline="central" font-weight="bold">R2K</text><text x="649" y="681" fill="#666" font-size="7" font-family="monospace" text-anchor="middle" dominant-baseline="central">15K*8</text></g></svg>

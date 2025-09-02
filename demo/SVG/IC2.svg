@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="canvas" viewBox="710 420 140 190" width="140" height="190"><metadata id="eda-meta">{
+  "format": "EDA-SmartSymbol-1.0",
+  "component": {
+    "lib_reference": "DAC0832",
+    "designator": "IC2",
+    "unique_id": "ODAE092001112864229361940SMEC6D",
+    "display_mode": 0,
+    "anchor_schema": "pin",
+    "pins": [
+      {
+        "order_index": 1,
+        "number": "1",
+        "number_original": "1",
+        "name": "CS",
+        "electrical_type": "passive",
+        "x": 730,
+        "y": 540,
+        "orientation": 58
+      },
+      {
+        "order_index": 2,
+        "number": "2",
+        "number_original": "2",
+        "name": "WR",
+        "electrical_type": "passive",
+        "x": 730,
+        "y": 550,
+        "orientation": 58
+      },
+      {
+        "order_index": 3,
+        "number": "3",
+        "number_original": "3",
+        "name": "AGND",
+        "electrical_type": "passive",
+        "x": 830,
+        "y": 560,
+        "orientation": 56
+      },
+      {
+        "order_index": 4,
+        "number": "4",
+        "number_original": "4",
+        "name": "D3",
+        "electrical_type": "passive",
+        "x": 730,
+        "y": 480,
+        "orientation": 58
+      },
+      {
+        "order_index": 5,
+        "number": "5",
+        "number_original": "5",
+        "name": "D2",
+        "electrical_type": "passive",
+        "x": 730,
+        "y": 470,
+        "orientation": 58
+      },
+      {
+        "order_index": 6,
+        "number": "6",
+        "number_original": "6",
+        "name": "D1",
+        "electrical_type": "passive",
+        "x": 730,
+        "y": 460,
+        "orientation": 58
+      },
+      {
+        "order_index": 7,
+        "number": "7",
+        "number_original": "7",
+        "name": "D0",
+        "electrical_type": "passive",
+        "x": 730,
+        "y": 450,
+        "orientation": 58
+      },
+      {
+        "order_index": 8,
+        "number": "8",
+        "number_original": "8",
+        "name": "VREF",
+        "electrical_type": "passive",
+        "x": 830,
+        "y": 450,
+        "orientation": 56
+      },
+      {
+        "order_index": 9,
+        "number": "9",
+        "number_original": "9",
+        "name": "RFB",
+        "electrical_type": "passive",
+        "x": 830,
+        "y": 490,
+        "orientation": 56
+      },
+      {
+        "order_index": 10,
+        "number": "10",
+        "number_original": "10",
+        "name": "DGND",
+        "electrical_type": "passive",
+        "x": 830,
+        "y": 570,
+        "orientation": 56
+      },
+      {
+        "order_index": 11,
+        "number": "11",
+        "number_original": "11",
+        "name": "IOUT1",
+        "electrical_type": "passive",
+        "x": 830,
+        "y": 530,
+        "orientation": 56
+      },
+      {
+        "order_index": 12,
+        "number": "12",
+        "number_original": "12",
+        "name": "IOUT2",
+        "electrical_type": "passive",
+        "x": 830,
+        "y": 550,
+        "orientation": 56
+      },
+      {
+        "order_index": 13,
+        "number": "13",
+        "number_original": "13",
+        "name": "D7",
+        "electrical_type": "passive",
+        "x": 730,
+        "y": 520,
+        "orientation": 58
+      },
+      {
+        "order_index": 14,
+        "number": "14",
+        "number_original": "14",
+        "name": "D6",
+        "electrical_type": "passive",
+        "x": 730,
+        "y": 510,
+        "orientation": 58
+      },
+      {
+        "order_index": 15,
+        "number": "15",
+        "number_original": "15",
+        "name": "D5",
+        "electrical_type": "passive",
+        "x": 730,
+        "y": 500,
+        "orientation": 58
+      },
+      {
+        "order_index": 16,
+        "number": "16",
+        "number_original": "16",
+        "name": "D4",
+        "electrical_type": "passive",
+        "x": 730,
+        "y": 490,
+        "orientation": 58
+      },
+      {
+        "order_index": 17,
+        "number": "17",
+        "number_original": "17",
+        "name": "XREF",
+        "electrical_type": "passive",
+        "x": 730,
+        "y": 570,
+        "orientation": 58
+      },
+      {
+        "order_index": 18,
+        "number": "18",
+        "number_original": "18",
+        "name": "WR",
+        "electrical_type": "passive",
+        "x": 730,
+        "y": 560,
+        "orientation": 58
+      },
+      {
+        "order_index": 19,
+        "number": "19",
+        "number_original": "19",
+        "name": "ILE",
+        "electrical_type": "passive",
+        "x": 830,
+        "y": 460,
+        "orientation": 56
+      },
+      {
+        "order_index": 20,
+        "number": "20",
+        "number_original": "20",
+        "name": "VCC",
+        "electrical_type": "passive",
+        "x": 830,
+        "y": 470,
+        "orientation": 56
+      }
+    ]
+  }
+}</metadata><g id="graphics"><rect x="750" y="440" width="60" height="140" fill="#FEFBCB" stroke="#8B0000" stroke-width="1.5"/></g><g id="pins"><line x1="750" y1="540" x2="730" y2="540" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="755" y="540" fill="#000080" font-size="8" font-family="monospace">CS</text><text dominant-baseline="middle" text-anchor="start" x="726" y="540" fill="#000080" font-size="8" font-family="monospace">1</text><line x1="750" y1="550" x2="730" y2="550" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="755" y="550" fill="#000080" font-size="8" font-family="monospace">WR</text><text dominant-baseline="middle" text-anchor="start" x="726" y="550" fill="#000080" font-size="8" font-family="monospace">2</text><line x1="810" y1="560" x2="830" y2="560" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="end" x="805" y="560" fill="#000080" font-size="8" font-family="monospace">AGND</text><text dominant-baseline="middle" text-anchor="end" x="834" y="560" fill="#000080" font-size="8" font-family="monospace">3</text><line x1="750" y1="480" x2="730" y2="480" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="755" y="480" fill="#000080" font-size="8" font-family="monospace">D3</text><text dominant-baseline="middle" text-anchor="start" x="726" y="480" fill="#000080" font-size="8" font-family="monospace">4</text><line x1="750" y1="470" x2="730" y2="470" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="755" y="470" fill="#000080" font-size="8" font-family="monospace">D2</text><text dominant-baseline="middle" text-anchor="start" x="726" y="470" fill="#000080" font-size="8" font-family="monospace">5</text><line x1="750" y1="460" x2="730" y2="460" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="755" y="460" fill="#000080" font-size="8" font-family="monospace">D1</text><text dominant-baseline="middle" text-anchor="start" x="726" y="460" fill="#000080" font-size="8" font-family="monospace">6</text><line x1="750" y1="450" x2="730" y2="450" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="755" y="450" fill="#000080" font-size="8" font-family="monospace">D0</text><text dominant-baseline="middle" text-anchor="start" x="726" y="450" fill="#000080" font-size="8" font-family="monospace">7</text><line x1="810" y1="450" x2="830" y2="450" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="end" x="805" y="450" fill="#000080" font-size="8" font-family="monospace">VREF</text><text dominant-baseline="middle" text-anchor="end" x="834" y="450" fill="#000080" font-size="8" font-family="monospace">8</text><line x1="810" y1="490" x2="830" y2="490" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="end" x="805" y="490" fill="#000080" font-size="8" font-family="monospace">RFB</text><text dominant-baseline="middle" text-anchor="end" x="834" y="490" fill="#000080" font-size="8" font-family="monospace">9</text><line x1="810" y1="570" x2="830" y2="570" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="end" x="805" y="570" fill="#000080" font-size="8" font-family="monospace">DGND</text><text dominant-baseline="middle" text-anchor="end" x="834" y="570" fill="#000080" font-size="8" font-family="monospace">10</text><line x1="810" y1="530" x2="830" y2="530" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="end" x="805" y="530" fill="#000080" font-size="8" font-family="monospace">IOUT1</text><text dominant-baseline="middle" text-anchor="end" x="834" y="530" fill="#000080" font-size="8" font-family="monospace">11</text><line x1="810" y1="550" x2="830" y2="550" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="end" x="805" y="550" fill="#000080" font-size="8" font-family="monospace">IOUT2</text><text dominant-baseline="middle" text-anchor="end" x="834" y="550" fill="#000080" font-size="8" font-family="monospace">12</text><line x1="750" y1="520" x2="730" y2="520" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="755" y="520" fill="#000080" font-size="8" font-family="monospace">D7</text><text dominant-baseline="middle" text-anchor="start" x="726" y="520" fill="#000080" font-size="8" font-family="monospace">13</text><line x1="750" y1="510" x2="730" y2="510" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="755" y="510" fill="#000080" font-size="8" font-family="monospace">D6</text><text dominant-baseline="middle" text-anchor="start" x="726" y="510" fill="#000080" font-size="8" font-family="monospace">14</text><line x1="750" y1="500" x2="730" y2="500" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="755" y="500" fill="#000080" font-size="8" font-family="monospace">D5</text><text dominant-baseline="middle" text-anchor="start" x="726" y="500" fill="#000080" font-size="8" font-family="monospace">15</text><line x1="750" y1="490" x2="730" y2="490" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="755" y="490" fill="#000080" font-size="8" font-family="monospace">D4</text><text dominant-baseline="middle" text-anchor="start" x="726" y="490" fill="#000080" font-size="8" font-family="monospace">16</text><line x1="750" y1="570" x2="730" y2="570" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="755" y="570" fill="#000080" font-size="8" font-family="monospace">XREF</text><text dominant-baseline="middle" text-anchor="start" x="726" y="570" fill="#000080" font-size="8" font-family="monospace">17</text><line x1="750" y1="560" x2="730" y2="560" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="start" x="755" y="560" fill="#000080" font-size="8" font-family="monospace">WR</text><text dominant-baseline="middle" text-anchor="start" x="726" y="560" fill="#000080" font-size="8" font-family="monospace">18</text><line x1="810" y1="460" x2="830" y2="460" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="end" x="805" y="460" fill="#000080" font-size="8" font-family="monospace">ILE</text><text dominant-baseline="middle" text-anchor="end" x="834" y="460" fill="#000080" font-size="8" font-family="monospace">19</text><line x1="810" y1="470" x2="830" y2="470" stroke="#8B0000" stroke-width="1.5"/><text dominant-baseline="middle" text-anchor="end" x="805" y="470" fill="#000080" font-size="8" font-family="monospace">VCC</text><text dominant-baseline="middle" text-anchor="end" x="834" y="470" fill="#000080" font-size="8" font-family="monospace">20</text></g><g id="anchors"><g class="connection-point" role="connection-point" data-order-index="1" data-pin-number="1" data-number-original="1" data-pin-name="CS" data-elec-type="passive" data-orientation="58" data-x="730" data-y="540"><circle cx="730" cy="540"/><title>#1 → Pin 1: CS [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="2" data-pin-number="2" data-number-original="2" data-pin-name="WR" data-elec-type="passive" data-orientation="58" data-x="730" data-y="550"><circle cx="730" cy="550"/><title>#2 → Pin 2: WR [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="3" data-pin-number="3" data-number-original="3" data-pin-name="AGND" data-elec-type="passive" data-orientation="56" data-x="830" data-y="560"><circle cx="830" cy="560"/><title>#3 → Pin 3: AGND [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="4" data-pin-number="4" data-number-original="4" data-pin-name="D3" data-elec-type="passive" data-orientation="58" data-x="730" data-y="480"><circle cx="730" cy="480"/><title>#4 → Pin 4: D3 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="5" data-pin-number="5" data-number-original="5" data-pin-name="D2" data-elec-type="passive" data-orientation="58" data-x="730" data-y="470"><circle cx="730" cy="470"/><title>#5 → Pin 5: D2 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="6" data-pin-number="6" data-number-original="6" data-pin-name="D1" data-elec-type="passive" data-orientation="58" data-x="730" data-y="460"><circle cx="730" cy="460"/><title>#6 → Pin 6: D1 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="7" data-pin-number="7" data-number-original="7" data-pin-name="D0" data-elec-type="passive" data-orientation="58" data-x="730" data-y="450"><circle cx="730" cy="450"/><title>#7 → Pin 7: D0 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="8" data-pin-number="8" data-number-original="8" data-pin-name="VREF" data-elec-type="passive" data-orientation="56" data-x="830" data-y="450"><circle cx="830" cy="450"/><title>#8 → Pin 8: VREF [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="9" data-pin-number="9" data-number-original="9" data-pin-name="RFB" data-elec-type="passive" data-orientation="56" data-x="830" data-y="490"><circle cx="830" cy="490"/><title>#9 → Pin 9: RFB [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="10" data-pin-number="10" data-number-original="10" data-pin-name="DGND" data-elec-type="passive" data-orientation="56" data-x="830" data-y="570"><circle cx="830" cy="570"/><title>#10 → Pin 10: DGND [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="11" data-pin-number="11" data-number-original="11" data-pin-name="IOUT1" data-elec-type="passive" data-orientation="56" data-x="830" data-y="530"><circle cx="830" cy="530"/><title>#11 → Pin 11: IOUT1 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="12" data-pin-number="12" data-number-original="12" data-pin-name="IOUT2" data-elec-type="passive" data-orientation="56" data-x="830" data-y="550"><circle cx="830" cy="550"/><title>#12 → Pin 12: IOUT2 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="13" data-pin-number="13" data-number-original="13" data-pin-name="D7" data-elec-type="passive" data-orientation="58" data-x="730" data-y="520"><circle cx="730" cy="520"/><title>#13 → Pin 13: D7 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="14" data-pin-number="14" data-number-original="14" data-pin-name="D6" data-elec-type="passive" data-orientation="58" data-x="730" data-y="510"><circle cx="730" cy="510"/><title>#14 → Pin 14: D6 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="15" data-pin-number="15" data-number-original="15" data-pin-name="D5" data-elec-type="passive" data-orientation="58" data-x="730" data-y="500"><circle cx="730" cy="500"/><title>#15 → Pin 15: D5 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="16" data-pin-number="16" data-number-original="16" data-pin-name="D4" data-elec-type="passive" data-orientation="58" data-x="730" data-y="490"><circle cx="730" cy="490"/><title>#16 → Pin 16: D4 [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="17" data-pin-number="17" data-number-original="17" data-pin-name="XREF" data-elec-type="passive" data-orientation="58" data-x="730" data-y="570"><circle cx="730" cy="570"/><title>#17 → Pin 17: XREF [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="18" data-pin-number="18" data-number-original="18" data-pin-name="WR" data-elec-type="passive" data-orientation="58" data-x="730" data-y="560"><circle cx="730" cy="560"/><title>#18 → Pin 18: WR [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="19" data-pin-number="19" data-number-original="19" data-pin-name="ILE" data-elec-type="passive" data-orientation="56" data-x="830" data-y="460"><circle cx="830" cy="460"/><title>#19 → Pin 19: ILE [passive]</title></g><g class="connection-point" role="connection-point" data-order-index="20" data-pin-number="20" data-number-original="20" data-pin-name="VCC" data-elec-type="passive" data-orientation="56" data-x="830" data-y="470"><circle cx="830" cy="470"/><title>#20 → Pin 20: VCC [passive]</title></g></g><g id="labels"><text x="750" y="590" fill="#000080" font-size="9" font-family="monospace" text-anchor="middle" dominant-baseline="central" font-weight="bold">IC2</text><text x="750" y="580" fill="#666" font-size="7" font-family="monospace" text-anchor="middle" dominant-baseline="central">DAC0832</text></g></svg>
