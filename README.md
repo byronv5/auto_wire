@@ -10,6 +10,7 @@
 - **SVG符号库**: 支持导入自定义SVG符号库
 - **实时交互**: 支持拖拽移动元件、旋转元件等交互操作
 - **质量评估**: 自动评估布局质量并提供优化建议
+- **schdoc导出**: 实时导出Altium Designer兼容的schdoc文件
 
 ### 智能优化
 - **关键电路优化**: 针对MCU、晶振、去耦电容等关键元件的特殊布局策略
@@ -44,7 +45,11 @@ auto-placementV1.1/
 ├── geometry.js             # 几何计算
 ├── quality.js              # 质量评估
 ├── utils.js                # 工具函数
-└── view.js                 # 视图控制
+├── view.js                 # 视图控制
+├── schdocWriter.js         # schdoc文件写入引擎
+├── schdocSync.js           # schdoc实时同步管理器
+├── schdocMapper.js         # schdoc数据映射层
+└── test_schdoc.html        # schdoc功能测试页面
 ```
 
 ## 🏗️ 架构设计
@@ -59,10 +64,13 @@ auto-placementV1.1/
 - **优化引擎** (`optimization.js`): 负责布局优化
 - **交互控制** (`interaction.js`): 处理用户交互
 - **绘图系统** (`drawing.js`): 负责SVG绘制
+- **schdoc导出** (`schdocWriter.js`, `schdocSync.js`, `schdocMapper.js`): 负责schdoc文件生成和实时同步
 
 ### 数据流
 ```
 网表文件 → 文件处理 → 状态管理 → 布局引擎 → 布线引擎 → 绘图系统 → SVG输出
+                                    ↓
+                               schdoc同步器 → schdoc文件输出
 ```
 
 ## 🎯 核心算法
@@ -112,6 +120,7 @@ auto-placementV1.1/
 ### 5. 导出结果
 - **导出原理图**: 保存为SVG格式
 - **导出网表**: 保存为JSON格式
+- **导出schdoc**: 保存为Altium Designer兼容的schdoc格式
 
 ## ⚙️ 配置参数
 
@@ -130,6 +139,19 @@ LANE_SPACING = 10            // 标准车道间距
 LANE_SPACING_TIGHT = 6       // 紧凑车道间距
 ROUTE_STUB = 18              // 标准布线桩长度
 ROUTE_STUB_IC = 36           // IC布线桩长度
+```
+
+### schdoc导出参数
+```javascript
+SCHDOC_CONFIG = {
+  ENABLE_REALTIME_SYNC: true,           // 启用实时同步
+  SCHDOC_FILE_PATH: './output/schematic.schdoc', // 默认输出路径
+  COORDINATE_SCALE: 100,                // Canvas单位到schdoc单位的转换比例
+  AUTO_SAVE_INTERVAL: 5000,             // 自动保存间隔(ms)
+  DEFAULT_COLORS: { ... },              // 默认颜色配置
+  PIN_LENGTHS: { ... },                 // 引脚长度配置
+  POWER_PORT_STYLES: { ... }            // 电源端口样式配置
+}
 ```
 
 ## 📊 质量评估
@@ -183,6 +205,10 @@ ROUTE_STUB_IC = 36           // IC布线桩长度
 - 增加邻近放置辅助函数
 - 保留原有的去耦电容优化
 - 增强重复电路识别和总线布线
+- **新增schdoc实时导出功能**
+- 支持Altium Designer兼容的schdoc文件格式
+- 实时同步Canvas绘制到schdoc文件
+- 完整的元件、导线、网络标签映射
 
 ### 主要改进
 - 模块化重构，提高代码可维护性

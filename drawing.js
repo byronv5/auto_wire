@@ -5,6 +5,7 @@ import { getNetStyle, offsetPathByLane } from './routing.js';
 import { pathHitsObstacle, rectsOverlap, addWireToObstacles } from './geometry.js';
 // 新增：从 component.js 导入必要的函数（修复未定义错误）
 import { isGndName } from './component.js';  // 如果有 isPowerName 等其他调用，也需添加
+import { schdocSync } from './schdocSync.js';
 
 /* ===== 绘图函数 ===== */
 export function drawWire(points, netName, customLaneSpacing){
@@ -22,6 +23,10 @@ export function drawWire(points, netName, customLaneSpacing){
   path.setAttribute('stroke-width',String(st.width));
   g.appendChild(path); 
   App.wires.push(path);
+  
+  // 通知schdoc同步器导线已添加
+  schdocSync.onWireAdded(path, netName);
+  
   return styledPath;
 }
 
@@ -39,6 +44,10 @@ export function drawDirectWire(points, netName) {
   path.setAttribute('stroke-width', String(st.width));
   g.appendChild(path);
   App.wires.push(path);
+  
+  // 通知schdoc同步器导线已添加
+  schdocSync.onWireAdded(path, netName);
+  
   return points;
 }
 
@@ -191,7 +200,11 @@ export function drawNetLabel(pt, name, wireOrientation, obstacles, node, suppres
   rectFinal.setAttribute('rx', '2');
   gFinal.insertBefore(rectFinal, txtFinal);
 
-  App.netLabels.push({ name, x: finalX, y: finalY });
+  const netLabel = { name, x: finalX, y: finalY };
+  App.netLabels.push(netLabel);
+  
+  // 通知schdoc同步器网络标签已添加
+  schdocSync.onNetLabelAdded(netLabel);
   
   const overallBbox = gFinal.getBBox();
   const labelObstacle = { 
@@ -230,6 +243,9 @@ export function drawVCCSymbolAt(anchor,netName){
     w:POWER_TRI_W+4,
     h:POWER_TRI_H+18
   });
+  
+  // 通知schdoc同步器电源端口已添加
+  schdocSync.onPowerPortAdded({ name: netName || 'VCC', x: anchor.x, y: anchor.y });
 }
 
 export function drawGNDSymbolAt(anchor,netName){
@@ -257,4 +273,7 @@ export function drawGNDSymbolAt(anchor,netName){
     w:GND_W+4,
     h:GND_H+16
   });
+  
+  // 通知schdoc同步器电源端口已添加
+  schdocSync.onPowerPortAdded({ name: netName || 'GND', x: anchor.x, y: anchor.y });
 }

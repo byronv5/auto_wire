@@ -3,6 +3,43 @@ import { $, toast } from './utils.js';
 import { allDistinctRecs, libCount, aliasNorms, addToMapList, norm } from './symbol.js';
 
 /* ===== 库/网表处理 ===== */
+export async function loadLibFilesFromDirectory() {
+  try {
+    // 从svglib目录加载所有SVG文件
+    const response = await fetch('/svglib/');
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    
+    const html = await response.text();
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+    const links = doc.querySelectorAll('a[href$=".svg"]');
+    
+    const svgFiles = Array.from(links).map(link => link.href);
+    
+    if (svgFiles.length === 0) {
+      toast('svglib目录中没有找到SVG文件', 'warn');
+      return;
+    }
+    
+    // 为每个SVG文件创建File对象
+    const files = await Promise.all(svgFiles.map(async (url) => {
+      const response = await fetch(url);
+      const blob = await response.blob();
+      const fileName = url.split('/').pop();
+      return new File([blob], fileName, { type: 'image/svg+xml' });
+    }));
+    
+    // 使用现有的loadLibFiles函数处理这些文件
+    await loadLibFiles(files);
+    
+  } catch (error) {
+    console.error('从svglib目录加载SVG文件失败:', error);
+    toast('从svglib目录加载SVG文件失败', 'err');
+  }
+}
+
 export async function loadLibFiles(files){
   let ok=0, fail=0;
   for (const f of files) {

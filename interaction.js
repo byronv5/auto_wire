@@ -2,11 +2,12 @@ import { App } from './state.js';
 import { $, snap, toast } from './utils.js';
 import { DEFAULT_VB } from './config.js';
 import { enablePanZoom } from './view.js';
-import { loadLibFiles, importNetlistFile, importNetlistFromText, tryParseJSON, parseProtelNET } from './fileHandlers.js';
+import { loadLibFilesFromDirectory, importNetlistFile, importNetlistFromText, tryParseJSON, parseProtelNET } from './fileHandlers.js';
 import { libCount } from './symbol.js';
 import { clearCanvas, buildInstances, renderInstances, instTransform } from './component.js';
 import { routeAllNets } from './routing.js';
 import { PlacementEngine } from './placement.js';
+import { schdocSync } from './schdocSync.js';
 
 /* ===== 元件交互与初始化 ===== */
 function enableComponentInteraction() {
@@ -99,40 +100,11 @@ export function initializeApp() {
   enablePanZoom();
   enableComponentInteraction();
   
-  $('#lib-input').onchange = async (e) => {
-    const files = e.target.files;
-    if (files && files.length) {
-      await loadLibFiles([...files]);
-    }
-  };
+  // 自动从svglib目录加载SVG库
+  loadLibFilesFromDirectory();
   
   $('#btn-import-netlist').onclick = () => {
     importNetlistFile();
-  };
-  
-  $('#btn-export-netlist').onclick = () => {
-    const jsonStr = JSON.stringify(App.plan, null, 2);
-    const blob = new Blob([jsonStr], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'netlist.json';
-    a.click();
-    URL.revokeObjectURL(url);
-    toast('网表已导出', 'ok');
-  };
-  
-  $('#btn-export-svg').onclick = () => {
-    const svg = $('#schematic');
-    const svgStr = new XMLSerializer().serializeToString(svg);
-    const blob = new Blob([svgStr], { type: 'image/svg+xml' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'schematic.svg';
-    a.click();
-    URL.revokeObjectURL(url);
-    toast('原理图已导出', 'ok');
   };
   
 // ... (函数内其他代码保持不变) ...
@@ -180,6 +152,34 @@ export function initializeApp() {
   $('#btn-clear').onclick = () => {
     clearCanvas();
   };
+  
+  // schdoc导出按钮
+  $('#btn-export-schdoc').onclick = async () => {
+    if (!App.inst.length) {
+      toast('画布为空，请先执行布局布线', 'warn');
+      return;
+    }
+    
+    const filename = `schematic_${new Date().toISOString().slice(0, 19).replace(/:/g, '-')}.schdoc`;
+    
+    // 显示加载状态
+    const originalText = $('#btn-export-schdoc').textContent;
+    $('#btn-export-schdoc').textContent = '导出中...';
+    $('#btn-export-schdoc').disabled = true;
+    
+    try {
+      await schdocSync.exportSchdoc(filename);
+    } catch (error) {
+      console.error('导出失败:', error);
+      toast('导出失败: ' + error.message, 'error');
+    } finally {
+      // 恢复按钮状态
+      $('#btn-export-schdoc').textContent = originalText;
+      $('#btn-export-schdoc').disabled = false;
+    }
+  };
+  
+  // schdoc同步功能始终启用，无需按钮控制
   
   $('#ck-grid').onchange = (e) => {
     $('#g-grid').style.display = e.target.checked ? 'block' : 'none';

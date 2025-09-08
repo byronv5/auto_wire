@@ -1,6 +1,7 @@
 import { App } from './state.js';
 import { $, toast, uuid } from './utils.js';
 import { pickSymbol, genPlaceholder, prefixIDs } from './symbol.js';
+import { schdocSync } from './schdocSync.js';
 
 /* ===== 符号/器件处理与管理 ===== */
 function buildSymbolNode(inst){
@@ -136,6 +137,11 @@ export function buildInstances(){
   rebuildRefIndex(); 
   renderInstances(); 
   $('#inst-count').textContent=String(App.inst.length);
+  
+  // 通知schdoc同步器元件已添加
+  App.inst.forEach(inst => {
+    schdocSync.onComponentAdded(inst);
+  });
 }
 
 export function renderInstances(){
