@@ -122,6 +122,53 @@ auto-placementV1.1/
 - **导出网表**: 保存为JSON格式
 - **导出schdoc**: 保存为Altium Designer兼容的schdoc格式
 
+### 🔧 schdoc 导出流程与注意事项
+
+1) 如何导出
+
+- 在页面中点击“导出 schdoc”按钮；或在控制台/代码里调用：
+
+```javascript
+import { schdocSync } from './schdocSync.js';
+await schdocSync.exportSchdoc('schematic.schdoc');
+```
+
+- 导出会先全量同步当前 Canvas 状态，再生成下载文件。
+
+2) 同步与生成机制（概览）
+
+- `schdocSync.syncToSchdoc()`：
+  - 清空历史记录 → 预加载 `svglib/*.schdoc` 模板 → 根据 `App.inst / App.wires / App.netLabels` 重建记录。
+  - 元件：优先按 `ref`（如 `R1`、`C7`、`IC1`、`RP1`）到 `svglib` 中寻找同名模板；不存在则回退到内置占位实现。
+- `schdocWriter.exportSchdoc()`：
+  - 生成 Header/Sheet 与逐条 RECORD，并发起浏览器下载。
+
+3) 坐标与网格
+
+- 全部坐标会按 `GRID` 对齐（见 `config.js` 中 `GRID`）。
+- 坐标转换采用 `SCHDOC_CONFIG`：
+  - `COORDINATE_SCALE`：单位缩放（默认 1）。
+  - `INVERT_Y`：Y 轴翻转（与 AD 的 Sheet 坐标系一致）。
+  - `SHEET_WIDTH/HEIGHT`：画布到 Sheet 的尺寸映射。
+
+4) 模板锚点与特殊器件
+
+- 默认锚点优先级：引脚质心 → 组件记录 LOCATION → 主矩形(14/10)中心 → 图形外框中心 → 全记录外框中心。
+- 仅对电位器（`RP*`/`POT*`）启用专门对齐：
+  - 若模板由四条 `RECORD=13` 直线构成外框，则优先取该矩形中心；
+  - 放置时以“左右端水平引脚的中线中心”为目标位置，避免因滑动端导致的上/下偏移；
+  - 该逻辑严格限定到 `RP*`/`POT*`，不会影响 IC 等其它元件。
+
+5) 导出文件名与路径
+
+- 默认下载为 `schematic.schdoc`。你也可以传入自定义文件名：`exportSchdoc('my_design.schdoc')`。
+- `SCHDOC_CONFIG.SCHDOC_FILE_PATH` 仅作默认路径标识，不会强制写磁盘，实际以浏览器下载为准。
+
+6) 常见排查
+
+- 元件错位：检查 `svglib/同名.schdoc` 是否存在，以及 `INVERT_Y/SHEET_HEIGHT` 是否匹配；必要时调整 `COMPONENT_OFFSET_* / PER_LIB_BIAS`。
+- 单个器件仍有半格偏移：确认其是否在 `GRID` 节点；或开启/关闭 `AUTO_FINE_ALIGN` 做对比。
+
 ## ⚙️ 配置参数
 
 ### 布局参数
