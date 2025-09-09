@@ -230,8 +230,14 @@ export class SchdocWriter {
       // 使用schdoc模板创建元件
       return this.addComponentFromTemplate(inst, template);
     } else {
-      console.warn(`未找到 ${componentKey}.schdoc 文件，跳过该元件`);
-      return -1;
+      // 模板缺失时，使用通用记录作为兜底，避免导出丢失元件
+      console.warn(`未找到 ${componentKey}.schdoc 文件，使用通用元件导出`);
+      const comp = this.createComponent(inst);
+      const ownerIndex = this.findLastComponentIndex();
+      // 生成引脚与标签
+      (inst.pins || []).forEach(pin => this.createPin(inst, pin, ownerIndex));
+      this.createComponentLabels(inst, ownerIndex);
+      return ownerIndex;
     }
   }
 

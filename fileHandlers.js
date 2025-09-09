@@ -5,18 +5,13 @@ import { allDistinctRecs, libCount, aliasNorms, addToMapList, norm } from './sym
 /* ===== 库/网表处理 ===== */
 export async function loadLibFilesFromDirectory() {
   try {
-    // 从svglib目录加载所有SVG文件
-    const response = await fetch('/svglib/');
+    // 通过后端API列出svglib目录的SVG文件（Express不会自动列目录）
+    const response = await fetch('/api/svglib/list');
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
-    
-    const html = await response.text();
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(html, 'text/html');
-    const links = doc.querySelectorAll('a[href$=".svg"]');
-    
-    const svgFiles = Array.from(links).map(link => link.href);
+    const data = await response.json();
+    const svgFiles = Array.isArray(data.files) ? data.files : [];
     
     if (svgFiles.length === 0) {
       toast('svglib目录中没有找到SVG文件', 'warn');

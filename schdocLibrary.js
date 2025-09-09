@@ -20,7 +20,7 @@ export class SchdocLibrary {
     }
 
     try {
-      const response = await fetch(`./svglib/${componentKey}.schdoc`);
+      const response = await fetch(`/svglib/${componentKey}.schdoc`);
       if (!response.ok) {
         console.warn(`无法加载 ${componentKey}.schdoc: ${response.status}`);
         return null;

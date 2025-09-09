@@ -121,6 +121,45 @@ auto-placementV1.1/
 - **导出原理图**: 保存为SVG格式
 - **导出网表**: 保存为JSON格式
 - **导出schdoc**: 保存为Altium Designer兼容的schdoc格式
+## REST API（无头自动化）
+
+提供一个简单的REST接口，将“导入网表 → 自动布局布线 → 导出schdoc”封装为服务。
+
+### 启动服务
+
+1) 安装依赖（需要 Node 18+）：
+
+```bash
+npm install express puppeteer
+```
+
+2) 使用内置服务一键启动（同时提供静态页面与API，统一端口7080）：
+
+```bash
+node server.js
+```
+
+启动后访问页面：`http://localhost:7080/`
+
+### 接口定义
+
+- URL: `POST /api/schematics`
+- 入参（JSON）：
+  - `netlist`：字符串，支持JSON或Protel(.net)文本
+  - `filename`（可选）：导出的文件名，默认 `schematic.schdoc`
+- 出参：`application/octet-stream` 二进制流，内容为 `.schdoc` 文件
+
+示例请求：
+
+```bash
+curl -X POST http://localhost:7080/api/schematics \
+  -H "Content-Type: application/json" \
+  -d '{"netlist":"{\"components\":[],\"nets\":[]}","filename":"demo.schdoc"}' \
+  -o demo.schdoc
+```
+
+说明：API内部通过无头浏览器加载本页面，调用 `window.autoAPI` 完成导入/布局/布线/导出。
+
 
 ### 🔧 schdoc 导出流程与注意事项
 
